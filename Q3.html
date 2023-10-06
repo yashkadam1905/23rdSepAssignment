@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <style>
+        body {
+            background-color: pink;
+
+        }
+
+        .form-container {
+            position: absolute;
+            left: 25%;
+            width: 50%;
+
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        .form {
+            border: 3px solid black;
+
+            padding-left: 15px;
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        input {
+            background-color: rgb(0, 0, .2);
+            width: 95%;
+            height: 20px;
+            padding: 15px;
+            opacity: .7;
+            border: 2px solid white;
+        }
+
+        input[type="radio"],
+        input[type=checkbox] {
+            /*apply for type under input*/
+            width: auto;
+        }
+
+        input::placeholder {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Login Form</h1>
+        <div class="form">
+            <form action="mh.js" method="get">
+                <div>
+
+                    <input type="text" id="fs" placeholder="enter first name" name="fs"><br>
+                </div>
+                <div>
+
+                    <input type="text" id="ls" placeholder="enter last name" name="ls"><br>
+                </div>
+                <div>
+
+                    <input type="text" id="age" placeholder="enter age" maxlength="3"><br>
+                </div>
+
+                <div>
+
+
+                    <input type="radio" id="male" value="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" value="other">
+                    <label for="other">Other</label><br>
+
+                </div>
+                <div>
+
+                    <input type="text" id="pass" placeholder="*****" minlength="8" maxlength="20" required><br>
+                </div>
+                <div>
+
+                    <input type="text" id="cpass" placeholder="*****" minlength="8" maxlength="20" required><br>
+                </div>
+                <div>
+                    <label for="terms">Terms</label>
+                    <input type="checkbox" id="terms"><span style="font-size: 20px;">I agree to terms and
+                        conditions</span></input><br>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

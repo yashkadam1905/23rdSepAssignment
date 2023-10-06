@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 50%;
+        }
+        p {
+            text-align: justify;
+            border: 5px dotted black ;
+            height: 100px;
+            padding: 5px 5px 5px 5px;
+        }
+        .bg--primary{
+            background-color: aquamarine;
+        }
+        .bg--secondary {
+            background-color: lightgreen;
+        }
+        .bg--default {
+            background-color: beige;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <p class="bg--primary">
+        It is a known fact that the right styleguide can significantly increase development speed, debugging, and the
+        implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any
+        structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term.
+
+        The BEM approach ensures that everyone who participates in the development of a website works with a single
+        codebase and speaks the same language. Using proper naming will prepare you for the changes in design of the
+        website.
+    </p>
+    <p class="bg--secondary">
+        Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or
+        element’s name plus two dashes: .block--mod or .block__elem--mod and .block--color-black with .block--color-red.
+        Spaces in complicated modifiers are replaced by dash
+    </p>
+    <p class="bg--default">
+        Modifier is an extra class name which you add to a block/element DOM node. Add modifier classes only to
+        blocks/elements they modify, and keep the original class.
+    </p>
+    
+</body>
+
+</html>
